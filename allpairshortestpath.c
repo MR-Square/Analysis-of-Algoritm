@@ -1,13 +1,14 @@
 /*Exp 7 All Pair Shortest Path
 
-Nadaf Zakki Noor Mohammed
-20CO40
+SHAIKH MOHD RAZA MOHD RAFIQUE
+20CO53
 2021-2022
 */
 #include<stdio.h>
 
 int min(int a,int b)
 {
+    // return (a<b)?a:b;
     if(a<b)
     {
         return a;
@@ -57,7 +58,7 @@ void main()
     for(i=1;i<=n;i++){
         for(j=1;j<=n;j++)
         {
-            printf("/nm[%d][%d]: ",i,j);
+            printf("m[%d][%d]: ",i,j);
             scanf("%d",&m[i][j]);
         }
     }
@@ -65,5 +66,36 @@ void main()
 }
 /*
 output:
+Enter the number of vertices : 
+3
+Enter the matrix : 
+/nm[1][1]: 0       
+/nm[1][2]: 4
+/nm[1][3]: 11
+/nm[2][1]: 6
+/nm[2][2]: 0
+/nm[2][3]: 2
+/nm[3][1]: 3
+/nm[3][2]: 20
+/nm[3][3]: 0
 
+A(0):
+0       4       11
+6       0       2
+3       20      0
+
+A(1):
+0       4       11
+6       0       2
+3       7       0
+
+A(2):
+0       4       6
+6       0       2
+3       7       0
+
+A(3):
+0       4       6
+5       0       2
+3       7       0
 */
